@@ -10,11 +10,11 @@ public class Main {
         Mentoria mentoria = new Mentoria();
 
         curso.setNome("Java Básico");
-        curso.setEmenta("estrutura simples, estrutura condicional, estrutura de repetição, vetores");
+        curso.setDescricao("estrutura simples, estrutura condicional, estrutura de repetição, vetores");
         curso.setCargaHoraria(60);
 
         curso1.setNome("Java Orientado a Objetos");
-        curso1.setEmenta("Pilares da programação orientada a objetos: abstração, encapsulamento, herança, polimorfismo; Interfaces");
+        curso1.setDescricao("Pilares da programação orientada a objetos: abstração, encapsulamento, herança, polimorfismo; Interfaces");
         curso1.setCargaHoraria(60);
 
         mentoria.setNome("A importância das boas práticas em programação");
