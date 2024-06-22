@@ -1,15 +1,28 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import br.edu.dio.desafio.dominio.Curso;
+import br.edu.dio.desafio.dominio.Mentoria;
+
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Curso curso = new Curso();
+        Curso curso1 = new Curso();
+        Mentoria mentoria = new Mentoria();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        curso.setNome("Java Básico");
+        curso.setEmenta("estrutura simples, estrutura condicional, estrutura de repetição, vetores");
+        curso.setCargaHoraria(60);
+
+        curso1.setNome("Java Orientado a Objetos");
+        curso1.setEmenta("Pilares da programação orientada a objetos: abstração, encapsulamento, herança, polimorfismo; Interfaces");
+        curso1.setCargaHoraria(60);
+
+        mentoria.setNome("A importância das boas práticas em programação");
+        mentoria.setDescricao("Discutiremos sobre os padrões de programação, como o de escrita (camelCase)");
+        mentoria.setData(LocalDate.now());
+
+        System.out.println(curso);
+        System.out.println(curso1);
+        System.out.println(mentoria);
     }
 }
